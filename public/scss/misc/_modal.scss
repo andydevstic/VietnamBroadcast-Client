@@ -1,0 +1,16 @@
+#modal-background {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: calc(100vw);
+  height: calc(100vh);
+  transition: background-color 0.5s;
+  #modal {
+    position: fixed;
+    z-index: 3;
+    top: 100px;
+    left: calc(50vw - 200px);
+    background-color: white;
+  }
+}

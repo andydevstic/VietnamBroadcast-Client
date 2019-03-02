@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Vietnam Broadcast</title>
+  <style type="text/css"></style><style type="text/css">* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body {
+  padding: 0px;
+  margin: 0px; }
+
+.app {
+  height: calc(100vh);
+  width: calc(100vw); }
+
+@media screen and (min-width: 600px) {
+  .header {
+    height: 70px; } }
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px; }
+
+.side-menu-wrapper {
+  position: fixed;
+  z-index: 2;
+  background-color: lightgrey;
+  height: calc(100vh);
+  width: 200px;
+  transition: left 0.3s;
+  -webkit-transition: left 0.3s; }
+  .side-menu-wrapper--off {
+    left: -200px; }
+  .side-menu-wrapper--on {
+    left: 0px; }
+
+.flex {
+  display: flex; }
+  .flex_col {
+    flex-direction: column; }
+  .flex_row {
+    flex-direction: row; }
+  .flex--justify-center {
+    justify-content: center; }
+  .flex--space-between {
+    justify-content: space-between; }
+  .flex--self-center {
+    align-self: center; }
+  .flex--items-center {
+    align-items: center; }
+  .flex--justify-end {
+    justify-content: end; }
+  .flex--space-around {
+    justify-content: space-around; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.menu-container_mobile {
+  width: 75px; }
+
+.list {
+  padding: 0px;
+  margin: 0px; }
+  .list li {
+    min-width: 150px;
+    cursor: pointer; }
+    .list li.\--height-70 {
+      height: 70px; }
+  .list--no-bullet li {
+    text-decoration: none;
+    list-style-type: none; }
+
+.\--full-height {
+  height: 100%; }
+
+.burger-bar {
+  cursor: pointer; }
+  .burger-bar div {
+    width: 50px;
+    height: 5px;
+    background-color: black;
+    transition: 0.3s; }
+    .burger-bar div:nth-child(2) {
+      margin: 6px 0px; }
+  .burger-bar--open div:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px); }
+  .burger-bar--open div:nth-child(2) {
+    opacity: 0; }
+  .burger-bar--open div:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px); }
+
+.\--full-width {
+  width: 100%; }
+
+.hidden {
+  display: none; }
+
+.\--relative {
+  position: relative; }
+
+.\--absolute {
+  position: absolute; }
+
+.\--no-padding {
+  padding: 0px; }
+
+.\--no-margin {
+  margin: 0px; }
+
+.\--padding-5 {
+  padding: 5px; }
+
+#modal-background {
+  position: fixed;
+  z-index: 3; }
+  #modal-background #modal {
+    z-index: 3;
+    top: 100px;
+    left: calc(50vw - 200px);
+    background-color: white; }
+
+.\--background-color-gray {
+  background-color: gray; }
+
+.main-page {
+  min-height: calc(100vh - 120px); }
+
+.\--hover-gray:hover {
+  background-color: lightgrey; }
+
+#root {
+  transition: background-color 0.5s; }
+</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="app"><div class="header"><div class="flex flex_row flex--space-between --full-height"><div class="logo-container"><p>This is logo</p></div><div class="menu-container_desktop"><ul class="flex flex-row list list--no-bullet --full-height"><li class="flex flex_row flex--justify-center flex--items-center --full-height">Add Review</li><li class="flex flex_row flex--justify-center flex--items-center --full-height">Dashboard</li><li class="flex flex_row flex--justify-center flex--items-center --full-height">Log in/Register</li></ul></div></div></div><div class="main-page" style="min-height: calc(-120px + 100vh);"><div class="flex flex_col"><div><div class="flex flex_row" style="padding: 0px 15%;"><div><div class="flex flex_col --padding-5" style="transition: padding 0.5s ease 0s; width: 88.2px;"><img src="v_files/url.html" alt="Book cover" style="height: 60%;"><div style="height: 40%;" class="flex flex_col flex--justify-end"><i title="Harry Potter and the Death Hallows by J.K Rowling" style="margin: 5px 0px;">Harry Potter and the ...</i><p title="Reviewer: Andy Devstic" style="margin: 5px 0px;">Reviewer: Andy Devst ...</p><p title="1000" style="margin: 5px 0px;">1000 </p><p title="2019/12/31" style="margin: 5px 0px;">2019/12/31 </p></div></div></div><div><div class="flex flex_col --padding-5" style="transition: padding 0.5s ease 0s; width: 88.2px;"><img src="v_files/url.html" alt="Book cover" style="height: 60%;"><div style="height: 40%;" class="flex flex_col flex--justify-end"><i title="Harry Potter and the Death Hallows by J.K Rowling" style="margin: 5px 0px;">Harry Potter and the ...</i><p title="Reviewer: Andy Devstic" style="margin: 5px 0px;">Reviewer: Andy Devst ...</p><p title="1000" style="margin: 5px 0px;">1000 </p><p title="2019/12/31" style="margin: 5px 0px;">2019/12/31 </p></div></div></div><div><div class="flex flex_col --padding-5" style="transition: padding 0.5s ease 0s; width: 88.2px;"><img src="v_files/url.html" alt="Book cover" style="height: 60%;"><div style="height: 40%;" class="flex flex_col flex--justify-end"><i title="Harry Potter and the Death Hallows by J.K Rowling" style="margin: 5px 0px;">Harry Potter and the ...</i><p title="Reviewer: Andy Devstic" style="margin: 5px 0px;">Reviewer: Andy Devst ...</p><p title="1000" style="margin: 5px 0px;">1000 </p><p title="2019/12/31" style="margin: 5px 0px;">2019/12/31 </p></div></div></div><div><div class="flex flex_col --padding-5" style="transition: padding 0.5s ease 0s; width: 88.2px;"><img src="v_files/url.html" alt="Book cover" style="height: 60%;"><div style="height: 40%;" class="flex flex_col flex--justify-end"><i title="Harry Potter and the Death Hallows by J.K Rowling" style="margin: 5px 0px;">Harry Potter and the ...</i><p title="Reviewer: Andy Devstic" style="margin: 5px 0px;">Reviewer: Andy Devst ...</p><p title="1000" style="margin: 5px 0px;">1000 </p><p title="2019/12/31" style="margin: 5px 0px;">2019/12/31 </p></div></div></div><div><div class="flex flex_col --padding-5" style="transition: padding 0.5s ease 0s; width: 88.2px;"><img src="v_files/url.html" alt="Book cover" style="height: 60%;"><div style="height: 40%;" class="flex flex_col flex--justify-end"><i title="Harry Potter and the Death Hallows by J.K Rowling" style="margin: 5px 0px;">Harry Potter and the ...</i><p title="Reviewer: Andy Devstic" style="margin: 5px 0px;">Reviewer: Andy Devst ...</p><p title="1000" style="margin: 5px 0px;">1000 </p><p title="2019/12/31" style="margin: 5px 0px;">2019/12/31 </p></div></div></div><div><div class="flex flex_col --padding-5" style="transition: padding 0.5s ease 0s; width: 88.2px;"><img src="v_files/url.html" alt="Book cover" style="height: 60%;"><div style="height: 40%;" class="flex flex_col flex--justify-end"><i title="Harry Potter and the Death Hallows by J.K Rowling" style="margin: 5px 0px;">Harry Potter and the ...</i><p title="Reviewer: Andy Devstic" style="margin: 5px 0px;">Reviewer: Andy Devst ...</p><p title="1000" style="margin: 5px 0px;">1000 </p><p title="2019/12/31" style="margin: 5px 0px;">2019/12/31 </p></div></div></div><div><div class="flex flex_col --padding-5" style="transition: padding 0.5s ease 0s; width: 88.2px;"><img src="v_files/url.html" alt="Book cover" style="height: 60%;"><div style="height: 40%;" class="flex flex_col flex--justify-end"><i title="Harry Potter and the Death Hallows by J.K Rowling" style="margin: 5px 0px;">Harry Potter and the ...</i><p title="Reviewer: Andy Devstic" style="margin: 5px 0px;">Reviewer: Andy Devst ...</p><p title="1000" style="margin: 5px 0px;">1000 </p><p title="2019/12/31" style="margin: 5px 0px;">2019/12/31 </p></div></div></div><div><div class="flex flex_col --padding-5" style="transition: padding 0.5s ease 0s; width: 88.2px;"><img src="v_files/url.html" alt="Book cover" style="height: 60%;"><div style="height: 40%;" class="flex flex_col flex--justify-end"><i title="Harry Potter and the Death Hallows by J.K Rowling" style="margin: 5px 0px;">Harry Potter and the ...</i><p title="Reviewer: Andy Devstic" style="margin: 5px 0px;">Reviewer: Andy Devst ...</p><p title="1000" style="margin: 5px 0px;">1000 </p><p title="2019/12/31" style="margin: 5px 0px;">2019/12/31 </p></div></div></div></div></div><div><div class="flex flex_row" style="padding: 0px 15%;"><div><div class="flex flex_col --padding-5" style="transition: padding 0.5s ease 0s; width: 88.2px;"><img src="v_files/url.html" alt="Book cover" style="height: 60%;"><div style="height: 40%;" class="flex flex_col flex--justify-end"><i title="Harry Potter and the Death Hallows by J.K Rowling" style="margin: 5px 0px;">Harry Potter and the ...</i><p title="Reviewer: Andy Devstic" style="margin: 5px 0px;">Reviewer: Andy Devst ...</p><p title="1000" style="margin: 5px 0px;">1000 </p><p title="2019/12/31" style="margin: 5px 0px;">2019/12/31 </p></div></div></div><div><div class="flex flex_col --padding-5" style="transition: padding 0.5s ease 0s; width: 88.2px;"><img src="v_files/url.html" alt="Book cover" style="height: 60%;"><div style="height: 40%;" class="flex flex_col flex--justify-end"><i title="Harry Potter and the Death Hallows by J.K Rowling" style="margin: 5px 0px;">Harry Potter and the ...</i><p title="Reviewer: Andy Devstic" style="margin: 5px 0px;">Reviewer: Andy Devst ...</p><p title="1000" style="margin: 5px 0px;">1000 </p><p title="2019/12/31" style="margin: 5px 0px;">2019/12/31 </p></div></div></div></div></div></div></div><div class="footer flex flex_row flex--justify-center flex--items-center"><p>Andy Devstic</p></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="v_files/bundle.js"></script><script src="v_files/0.js"></script><script src="v_files/main.js"></script>
+
+</body></html>

@@ -1,3 +1,3 @@
 export const userActions = {
-  LOGIN: 'LOGIN'
+  LOGIN: 'USER_LOGGED_IN'
 }

@@ -1,0 +1,14 @@
+@import './header';
+@import './footer';
+@import './side-menu';
+@import './layout/index';
+@import './list/index';
+@import './misc/index';
+@import './pages/index';
+@import './pseudo/index';
+
+#root {
+  transition: background-color 0.5s;
+  width: calc(100vw);
+  height: calc(100vh);
+}
