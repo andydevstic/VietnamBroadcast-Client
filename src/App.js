@@ -3,7 +3,8 @@ import {Switch, Route} from 'react-router'
 import {connect} from 'react-redux'
 
 import './App.scss';
-import {MainPage, NotFoundPage} from './pages'
+import MainPage from './pages/main-page'
+import NotFoundPage from './pages/404'
 import SideMenu from './components/side-menu'
 import Header from './components/header'
 import Footer from './components/footer'
@@ -21,7 +22,8 @@ class App extends Component {
     return (
       <div className="app">
         {
-          screenIsMobile() ? (
+          screenIsMobile() ? 
+          (
             <div className={`side-menu-wrapper side-menu-wrapper--${sideMenuIsOpen ? 'on' : 'off'}`}>
               <SideMenu />
             </div>

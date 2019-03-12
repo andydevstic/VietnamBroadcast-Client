@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
 import {Switch, Route} from 'react-router'
 
-import {HomePage} from './home'
+import HomePage from './home'
+import AddReviewPage from './review/add-review'
 
-export class MainPage extends Component {
+export default class MainPage extends Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -13,6 +14,7 @@ export class MainPage extends Component {
       <div className={'main-page'} style={{minHeight: 'calc(100vh - 120px)'}}>
         <Switch>
           <Route path='/' exact component={HomePage} />
+          <Route path='/review/add' exact component={AddReviewPage} />
         </Switch>
       </div>
     )

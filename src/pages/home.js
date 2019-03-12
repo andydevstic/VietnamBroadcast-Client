@@ -18,7 +18,7 @@ const booksPerRowOnScreenWidth = {
   }
 }
 
-export class HomePage extends Component {
+export default class HomePage extends Component {
 
   renderBookRows() {
     

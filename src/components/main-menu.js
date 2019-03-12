@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-// import {Link, NavLink} from 'react-router'
+import {Link} from 'react-router-dom'
 import DropDown from './etc/drop-down-list'
 import Modal from './modal'
 
@@ -27,7 +27,7 @@ class MainMenu extends Component {
     const {isModalOpen} = this.state
     return (
       <ul className='flex flex-row list list--no-bullet --full-height'>
-        <li className='flex flex_row flex--justify-center flex--items-center --full-height'>Add Review</li>
+        <Link to={'/review/add'} ><li className='flex flex_row flex--justify-center flex--items-center --full-height'>Add Review</li></Link>
         <li className='flex flex_row flex--justify-center flex--items-center --full-height'>Dashboard</li>
         {
           user && user.username ? 
